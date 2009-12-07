@@ -1,6 +1,11 @@
-There is a simple demo showing the usage of this component:
-1) Under the shell just type: mvn exec:java
-2) Point your browser to http://localhost:8080
+To run the tests, you need to run a local cometd server.
 
-then under the shell console start type something followed by <enter>, you'll see what you are typing into the browser.
-This simple demo is under: src/main/java/org/apache/camel/component/comet/CometProducerConsumerInteractiveTest.java
+Get the `cometd-demo` project here:
+
+  http://github.com/ceefour/cometd-demo
+
+Install it on your container under `/cometd-demo` context so it's accesible by:
+
+  http://localhost:8080/cometd-demo
+
+Run `mvn test` and it should be fine.
