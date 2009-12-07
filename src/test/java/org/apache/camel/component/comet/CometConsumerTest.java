@@ -54,7 +54,7 @@ public class CometConsumerTest extends CamelTestSupport {
 				template.sendBody("direct:start", "World");
 			}
 		});
-		template.sendBody("mock:received", "maknyus");
+		//template.sendBody("mock:received", "maknyus");
 		assertMockEndpointsSatisfied();
 	}
 
