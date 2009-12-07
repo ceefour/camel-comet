@@ -4,8 +4,19 @@ Get the `cometd-demo` project here:
 
   http://github.com/ceefour/cometd-demo
 
-Install it on your container under `/cometd-demo` context so it's accesible by:
+Compile the project (or use the resulting WAR) and install it on your container
+under `/cometd-demo` context so it's accesible by:
 
   http://localhost:8080/cometd-demo
 
-Run `mvn test` and it should be fine.
+From `camel-comet` project, run `mvn test` to run the tests.
+
+Set the `comet.uri` Java system property to change to something else,
+for example if you have a server running on:
+
+  http://example.com:9000/cometd
+
+Then set `comet.uri` as follows:
+
+  comet://example.com:9000/cometd
+
